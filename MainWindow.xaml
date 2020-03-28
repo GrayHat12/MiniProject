@@ -1,0 +1,28 @@
+﻿<Window x:Class="MiniProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiniProject"
+        mc:Ignorable="d"
+        Title="Wholesale Management" Height="500" Width="800" ResizeMode="NoResize">
+    <Grid Background="#202020">
+        <GridSplitter Background="#007ACC" HorizontalAlignment="Left" Height="410" Margin="388,29,0,0" VerticalAlignment="Top" Width="2"/>
+        
+        <Label Foreground="#FFFFFF" FontWeight="Bold" FontFamily="Arial" FontSize="30" Content="CUSTOMER" HorizontalAlignment="Left" Margin="100,54,0,0" VerticalAlignment="Top"/>
+        
+        <PasswordBox PasswordChanged="CustomerID_PasswordChanged" Name="CustomerID" ToolTip="Customer ID" PasswordChar="*" Foreground="White" Background="#686868" HorizontalAlignment="Left" Height="22" Margin="76,172,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox Name="CustId" TextChanged="CustId_TextChanged" ToolTip="Customer Name" Foreground="White" Background="#686868" HorizontalAlignment="Left" Height="24" Margin="76,246,0,0" TextWrapping="Wrap" Text="CUSTOMER NAME" VerticalAlignment="Top" Width="250"/>
+        <Button Name="CustLogin" Background="#007ACC" Foreground="White" FontSize="15" Content="LOGIN" HorizontalAlignment="Left" Margin="100,334,0,0" VerticalAlignment="Top" Width="181" RenderTransformOrigin="-0.013,0.3" Click="CustLogin_Click"/>
+
+        <Label Foreground="#FFFFFF" FontWeight="Bold" FontFamily="Arial" FontSize="30" Content="MANAGER" HorizontalAlignment="Left" Margin="507,54,0,0" VerticalAlignment="Top"/>
+        
+        <TextBox TextChanged="ManagerID_TextChanged" Name="ManagerID" ToolTip="Manager ID" Foreground="White" Background="#686868" HorizontalAlignment="Left" Height="22" Margin="475,172,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="250"/>
+        <PasswordBox PasswordChanged="ManagerPass_PasswordChanged" Name="ManagerPass" ToolTip="Manager Password" PasswordChar="*" Foreground="White" Background="#686868" HorizontalAlignment="Left" Height="22" Margin="475,246,0,0" VerticalAlignment="Top" Width="250"/>
+        <Button Click="ManagerLogin_Click" Name="ManagerLogin" Background="#007ACC" Foreground="White" FontSize="15" Content="LOGIN" HorizontalAlignment="Left" Margin="507,334,0,0" VerticalAlignment="Top" Width="181" RenderTransformOrigin="-0.013,0.3"/>
+        <Button Name="CreateItem" Click="CreateItem_Click" Background="#007ACC" Foreground="White" FontSize="15" Content="CREATE ITEM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" Margin="428,415,0,0"/>
+        <Button Name="CreateRetailer" Click="CreateRetailer_Click" Background="#007ACC" Foreground="White" FontSize="15" Content="CREATE RETAILER" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" Margin="607,415,0,0"/>
+        <Button Name="CreateCustomer" Click="CreateCustomer_Click" FontSize="15" Foreground="White" BorderThickness="0" Background="#007ACC" Content="CREATE CUSTOMER" HorizontalAlignment="Left" Margin="100,400,0,0" VerticalAlignment="Top" Width="181" Height="29"/>
+
+    </Grid>
+</Window>

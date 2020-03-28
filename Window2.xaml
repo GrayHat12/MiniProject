@@ -1,0 +1,31 @@
+﻿<Window x:Class="MiniProject.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiniProject"
+        Background="#2D2D30"
+        mc:Ignorable="d"
+        Title="Manager" Height="500" Width="1000" ResizeMode="NoResize">
+    <Grid>
+        <GridSplitter HorizontalAlignment="Left" Background="#007ACC" Height="408" Margin="359,28,0,0" VerticalAlignment="Top" Width="1"/>
+
+        <Label Content="STOCK" HorizontalAlignment="Left" FontSize="20" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Margin="25,28,0,0" Width="297" Height="34"/>
+        <ScrollViewer Name="ScrollStock" Background="#333337" HorizontalAlignment="Left" Height="369" Margin="25,67,0,0" VerticalAlignment="Top" Width="297"/>
+
+        <Label Content="BUY" HorizontalAlignment="Left" FontSize="20" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="297" Height="34" Margin="513,40,0,0"/>
+        <GridSplitter HorizontalAlignment="Left" Height="330" Margin="699,106,0,0" Background="#686868" VerticalAlignment="Top" Width="1"/>
+
+        <Label Content="RETAILER" HorizontalAlignment="Left" FontSize="15" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="229" Height="33" Margin="401,106,0,0"/>
+        <ScrollViewer Name="RetailerScrollV" Background="#333337" HorizontalAlignment="Left" Height="292" Margin="382,144,0,0" VerticalAlignment="Top" Width="286"/>
+
+        <Label Content="ITEM" FontSize="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" HorizontalAlignment="Left" Margin="705,113,0,0" VerticalAlignment="Top" Width="279"/>
+        <Label Name="ItName" Content="ITEM NAME" Background="#333337" FontSize="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="241" Margin="725,181,0,0" Height="39"/>
+        <Label Name="CPLabel" Content="CP : $0.00" Background="#333337" FontSize="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="39" Margin="725,253,0,0"/>
+        <Label Name="SPLabel" Content="SP : $0.00" Background="#333337" FontSize="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="39" Margin="866,253,0,0"/>
+        <Label Content="QUANTITY" Background="#333337" FontSize="15" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="39" Margin="725,317,0,0"/>
+        <TextBox Name="InputQuant" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" BorderThickness="0" Background="#333337" HorizontalAlignment="Left" Height="36" Margin="844,317,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="122"/>
+        <Button Click="BuyClick" Background="#007ACC" VerticalContentAlignment="Center" FontSize="15" Foreground="White" Content="BUY" HorizontalAlignment="Left" Margin="725,384,0,0" VerticalAlignment="Top" Width="241" Height="23"/>
+        <Button Click="LogoutClick" Background="#E41400" VerticalContentAlignment="Center" FontSize="15" Foreground="White" Content="LOGOUT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="241" Height="23" Margin="725,418,0,0"/>
+    </Grid>
+</Window>
