@@ -1,0 +1,2 @@
+# MiniProject
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0fcfe9d2ddf8478c9187011c1923d843)](https://app.codacy.com/manual/grayhathacks10/MiniProject?utm_source=github.com&utm_medium=referral&utm_content=GrayHat12/MiniProject&utm_campaign=Badge_Grade_Dashboard)
